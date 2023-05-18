@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="projectNeptun.menu"
+             xmlns:views="clr-namespace:projectNeptun.Views"      
+             BackgroundColor="#72C954"
+             Shell.NavBarIsVisible="false">
+
+    
+    <TabBar>
+
+        <ShellContent
+            Title="Главная"
+            ContentTemplate="{DataTemplate views:company}"
+            Icon="permanent_job.png">
+        </ShellContent>
+        <ShellContent
+            Title="Товары"
+            ContentTemplate="{DataTemplate views:MyRecipesPage}"
+            Icon="basket.png">
+        </ShellContent>
+        <ShellContent
+            Title="Карты"
+            Icon="map_marker.png"
+            ContentTemplate="{DataTemplate views:map}">
+        </ShellContent>
+        <ShellContent
+            Title="Поддержка"
+            Icon="help.png"
+            ContentTemplate="{DataTemplate views:support}">
+        </ShellContent>
+        <ShellContent
+            Title="Выход"
+            Icon="logout.png">
+            <!--ContentTemplate="{DataTemplate views:NewRecipePage}">--> 
+        </ShellContent>
+     
+
+
+    </TabBar>
+</Shell>

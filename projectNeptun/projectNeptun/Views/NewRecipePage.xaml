@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="projectNeptun.Views.NewRecipePage"
+             Shell.BackgroundColor="#72C954">
+    <ContentPage.Content>
+        <ScrollView>
+            <RelativeLayout>
+                <Label Text="Название продукта:" FontSize="20"
+                   RelativeLayout.XConstraint="5"
+                   RelativeLayout.YConstraint="10"
+                   TextColor="Black"></Label>
+                <Editor Placeholder="Введите название"
+                    Text="{Binding RecipeName}"
+                    FontSize="18"
+                    WidthRequest="350"
+                    RelativeLayout.XConstraint="5"
+                    RelativeLayout.YConstraint="40"
+                    BackgroundColor="#72C954"
+                   AutoSize="TextChanges">
+                </Editor>
+                <Label Text="Цена:" FontSize="20"
+                   RelativeLayout.XConstraint="5"
+                   RelativeLayout.YConstraint="90"
+                   TextColor="Black"></Label>
+                <Editor  
+                        Placeholder="Цена "
+                    Text="{Binding Description}"
+                    FontSize="18"
+                    WidthRequest="350"
+                    RelativeLayout.XConstraint="5"
+                    RelativeLayout.YConstraint="120"
+                    BackgroundColor="#72C954"
+                   AutoSize="TextChanges">
+                    </Editor>
+                    <Label Text="Ингредиенты:" FontSize="20"
+                   RelativeLayout.XConstraint="5"
+                   RelativeLayout.YConstraint="195"
+                   TextColor="Black"></Label>
+                <Editor Placeholder="Введите название ингредиентов"
+                        Text="{Binding Ingredients}"
+                        FontSize="18"
+                        WidthRequest="350"
+                        RelativeLayout.XConstraint="5"
+                        RelativeLayout.YConstraint="225"
+                        BackgroundColor="#72C954"
+                        AutoSize="TextChanges">
+                </Editor>
+                <Label Text="Способ приготавления:" FontSize="20"
+                   RelativeLayout.XConstraint="5"
+                   RelativeLayout.YConstraint="310"
+                   TextColor="Black"></Label>
+                <Editor Placeholder="Добавте способ приготовления"
+                    Text="{Binding MainInfo}"
+                    WidthRequest="350"
+                    RelativeLayout.XConstraint="5"
+                    RelativeLayout.YConstraint="340"
+                    BackgroundColor="#72C954"
+                   AutoSize="TextChanges">
+                </Editor>
+                <Grid RelativeLayout.HeightConstraint="60"
+                      RelativeLayout.XConstraint="15"
+                      RelativeLayout.YConstraint="490">
+                    <Button Grid.Column="0" Text="Сохранить"
+                            CornerRadius="20" TextColor="White"
+                            BackgroundColor="#72C954"
+                    Clicked="ButtonSave_Click"></Button>
+                    <Button Grid.Column="2" Text="Удалить"
+                            CornerRadius="20" TextColor="White"
+                    Clicked="ButtonDelete_Click"
+                            BackgroundColor="#72C954"></Button>
+                    <Button Grid.Column="1" Text="Обновить"
+                            CornerRadius="20"
+                    Clicked="ButtonSave_Click"
+                            BackgroundColor="#72C954"
+                           TextColor="White"></Button>
+                </Grid>
+            </RelativeLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

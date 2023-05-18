@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="projectNeptun.Views.map">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+            <Image Source="hat.png" VerticalOptions="StartAndExpand"></Image>
+            <Label Text="Мы на карте"   
+               TextColor="#72C954"
+               FontSize="30"
+               FontFamily= "Lobster-Regular"
+               FontAttributes="Bold"
+                   Margin="15, 10, 10, 10"></Label>
+
+                <Image Source="image_map.png" VerticalOptions="StartAndExpand"></Image>
+                <Button x:Name="mapp"  BackgroundColor="transparent" ImageSource="frame.png"></Button>
+
+                <Image Source="group_7.png" VerticalOptions="StartAndExpand"></Image>
+
+            </StackLayout>
+        </ScrollView>
+        
+    </ContentPage.Content>
+</ContentPage>

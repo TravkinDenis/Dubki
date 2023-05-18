@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="projectNeptun.Views.support">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="hat.png" VerticalOptions="StartAndExpand"></Image>
+
+            <Label Text="Для связи с нами" 
+               TextColor="#72C954"
+               FontSize="30"
+               FontFamily= "Lobster-Regular"
+               FontAttributes="Bold"
+                   Margin="15, 10, 10, 10"></Label>
+
+            <StackLayout Orientation="Horizontal" Spacing="140" HorizontalOptions="Start" Margin="0, 10, 0, 0">
+                <Label Text="Мы в вк" VerticalOptions="Center" TextColor="Black" Margin="15, 0, 0, 0" FontSize="18"/>
+                <Button x:Name="vk" WidthRequest="50" HeightRequest="55" BackgroundColor="transparent" ImageSource="vk.png"></Button>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="Start" Margin="0, 0, 0, 0">
+                <Label Text="Мы в одноклассниках" VerticalOptions="Center" TextColor="Black" Margin="15, 0, 0, 0" FontSize="18"/>
+                <Button x:Name="odnoklassniki" WidthRequest="50" HeightRequest="55" BackgroundColor="transparent" ImageSource="odnoklassniki.png"></Button>
+            </StackLayout>
+
+            
+
+            <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="Start" Margin="0, 0, 0, 0">
+                <Label x:Name="text" Text="Наша почта:" HorizontalOptions="Start" VerticalOptions="Center" TextColor="Black" Margin="15, 0, 0, 0" FontSize="18"/>
+                <Button x:Name="poto" Text="info@dubki-produkty.ru" WidthRequest="210" HeightRequest="55" TextColor="#0000ff" BackgroundColor="transparent" ></Button>
+                
+            </StackLayout>
+           
+             
+            <Label
+            Text="Наши реквизиты" 
+               TextColor="#72C954"
+               FontSize="30"
+               FontFamily= "Lobster-Regular"
+               FontAttributes="Bold"
+                   Margin="15, 10, 10, 10"></Label>
+
+            <StackLayout  HorizontalOptions="Start" Margin="0, 0, 0, 0">
+                <Label Text="ИП Кондратьев Юрий Алексеевич" TextColor="Black" Margin="15, 0, 0, 0" FontSize="18"></Label>
+                <Label Text="ИНН 645204971442" TextColor="Black" Margin="15, 0, 0, 0" FontSize="18"></Label>
+                <Label Text="ОГРНИП 308645314200049" TextColor="Black" Margin="15, 0, 0, 0" FontSize="18"></Label>
+                <Label Text="р/с 40802810456390000269" TextColor="Black" Margin="15, 0, 0, 0" FontSize="18"></Label>
+                <Label Text="Поволжский Банк ПАО Сбербанк г. Самара" TextColor="Black" Margin="15, 0, 0, 0" FontSize="18"></Label>
+                <Label Text="к/с 30101810200000000607" TextColor="Black" Margin="15, 0, 0, 0" FontSize="18"></Label>
+                <Label Text="БИК 043601607" TextColor="Black" Margin="15, 0, 0, 15" FontSize="18"></Label>
+            </StackLayout>
+
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

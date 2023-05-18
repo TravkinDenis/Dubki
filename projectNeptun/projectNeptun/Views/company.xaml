@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="projectNeptun.Views.company">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="hat.png" VerticalOptions="StartAndExpand"></Image>
+            <Label Text="О компании" 
+               FontFamily="Lobster-Regular"
+               TextColor="#72C954"
+               FontSize="30"
+              
+               FontAttributes="Bold"
+                   Margin="15, 10, 10, 10"></Label>
+
+
+            <Label Text="Дубки. Продукты от производителя» — торговая сеть продуктовых магазинов «у дома». Широкий ассортимент от мясоколбасных изделий до молочной продукции — все от производителей." HorizontalOptions="Start" Margin="15, 10, 10, 5" TextColor="Black" FontSize="Default"></Label>
+            <Image Source="image.png" VerticalOptions="StartAndExpand" Margin="10, 10, 10, 10"></Image>
+            <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="Start" Margin="10, 5, 5, 10">
+                <Image Source="image_2.png" VerticalOptions="StartAndExpand"></Image>
+                <Image Source="image_3.png" VerticalOptions="StartAndExpand"></Image>
+            </StackLayout>
+
+            <Label Text="Скидки и акции" 
+                   TextColor="#72C954"
+               FontSize="30"
+               FontFamily= "Lobster-Regular"
+               FontAttributes="Bold"
+                   Margin="15, 10, 10, 10" ></Label>
+            <Image Source="group.png" VerticalOptions="StartAndExpand"></Image>
+            <Image Source="group_3.png" VerticalOptions="StartAndExpand"></Image>
+            <Image Source="group_4.png" VerticalOptions="StartAndExpand"></Image>
+
+            <Label Text="О магазинах" 
+                   TextColor="#72C954"
+               FontSize="30"
+               FontFamily= "Lobster-Regular"
+               FontAttributes="Bold"
+                   Margin="15, 10, 10, 10" ></Label>
+            
+            <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="Start" Margin="0, 20, 0, 0">
+                <Label Text="Магазины «у дома»
+Небольшие по площади магазины, предназначенные для ежедневных покупок, с хорошим выбором продуктов питания по низким ценам."  TextColor="Black" Margin="15, 0, 0, 0" FontSize="Default"/>
+                <Image Source="image3.png" Margin="0, 10, 15, 10"></Image>
+            </StackLayout>
+
+          
+            
+            <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="Start" Margin="0, 20, 0, 0">
+                <Image Source="image3.png" Margin="10, 10, 10, 10"></Image>
+                <Label Text="Магазины «самообслуживания»
+Магазины с более широким ассортиментом, чем у магазинов «у дома», с «островами» гастрономии, где представлены салаты, торты и пирожные с выделенной зоной кафе."  TextColor="Black" Margin="15, 0, 0, 0" FontSize="Default"/>
+                
+            </StackLayout>
+
+            <Label Text="Работа"
+                   TextColor="#72C954"
+               FontSize="30"
+               FontFamily= "Lobster-Regular"
+               FontAttributes="Bold"
+                   Margin="15, 10, 10, 10"></Label>
+            <Label Text="Став нашим сотрудником, ты становишься частью большой и дружной команды.Наш бизнес растёт и развивается. По всей стране. Открываются новые современные магазины.Чтобы развивать такой бизнес, нужны специалисты со свежими идеями, готовые ежедневно решать интересные нестандартные задачи." HorizontalOptions="Start" Margin="15, 10, 10, 5" TextColor="Black" FontSize="Default"></Label>
+            <Button x:Name="hh" Text="Посмотреть вакансии на hh.ru"  WidthRequest="20" HeightRequest="55" TextColor="White" BackgroundColor="#72C954" Margin="15, 10, 15, 10" ></Button>
+
+
+            <Label Text="Партнеры"
+                   TextColor="#72C954"
+               FontSize="30"
+               FontFamily= "Lobster-Regular"
+               FontAttributes="Bold"
+                   Margin="15, 10, 10, 10"></Label>
+            
+            <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="Start" Margin="0, 20, 0, 0">
+                <Image Source="partner1.png" Margin="10, 10, 10, 10"></Image>
+                <Image Source="partner2.png"></Image>
+            </StackLayout>
+
+          
+
+            <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="Start" Margin="0, 20, 0, 0">
+                <Image Source="partner3.png" Margin="80, 10, 10, 10"></Image>
+                <Image Source="partner4.png"></Image>
+            </StackLayout>
+        </StackLayout>
+        
+        
+    </ScrollView>
+</ContentPage>
